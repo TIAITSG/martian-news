@@ -10,11 +10,28 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
+    ffi (1.17.0)
+    ffi (1.17.0-aarch64-linux-gnu)
+    ffi (1.17.0-aarch64-linux-musl)
+    ffi (1.17.0-arm-linux-gnu)
+    ffi (1.17.0-arm-linux-musl)
     ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86-linux-gnu)
+    ffi (1.17.0-x86-linux-musl)
     ffi (1.17.0-x86_64-darwin)
     ffi (1.17.0-x86_64-linux-gnu)
+    ffi (1.17.0-x86_64-linux-musl)
     forwardable-extended (2.6.0)
+    google-protobuf (4.27.3)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.27.3-aarch64-linux)
+      bigdecimal
+      rake (>= 13)
     google-protobuf (4.27.3-arm64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.27.3-x86-linux)
       bigdecimal
       rake (>= 13)
     google-protobuf (4.27.3-x86_64-darwin)
@@ -70,11 +87,50 @@ GEM
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
+    sass-embedded (1.77.8)
+      google-protobuf (~> 4.26)
+      rake (>= 13)
+    sass-embedded (1.77.8-aarch64-linux-android)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-aarch64-linux-gnu)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-aarch64-linux-musl)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-aarch64-mingw-ucrt)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-arm-linux-androideabi)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-arm-linux-gnueabihf)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-arm-linux-musleabihf)
+      google-protobuf (~> 4.26)
     sass-embedded (1.77.8-arm64-darwin)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-riscv64-linux-android)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-riscv64-linux-gnu)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-riscv64-linux-musl)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-x86-cygwin)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-x86-linux-android)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-x86-linux-gnu)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-x86-linux-musl)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-x86-mingw-ucrt)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-x86_64-cygwin)
       google-protobuf (~> 4.26)
     sass-embedded (1.77.8-x86_64-darwin)
       google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-x86_64-linux-android)
+      google-protobuf (~> 4.26)
     sass-embedded (1.77.8-x86_64-linux-gnu)
+      google-protobuf (~> 4.26)
+    sass-embedded (1.77.8-x86_64-linux-musl)
       google-protobuf (~> 4.26)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -88,10 +144,33 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
-  arm64-darwin-22
-  arm64-darwin-23
-  x86_64-darwin-20
+  aarch64-linux
+  aarch64-linux-android
+  aarch64-linux-gnu
+  aarch64-linux-musl
+  aarch64-mingw-ucrt
+  arm-linux-androideabi
+  arm-linux-gnu
+  arm-linux-gnueabihf
+  arm-linux-musl
+  arm-linux-musleabihf
+  arm64-darwin
+  riscv64-linux-android
+  riscv64-linux-gnu
+  riscv64-linux-musl
+  ruby
+  x86-cygwin
+  x86-linux
+  x86-linux-android
+  x86-linux-gnu
+  x86-linux-musl
+  x86-mingw-ucrt
+  x86_64-cygwin
+  x86_64-darwin
   x86_64-linux
+  x86_64-linux-android
+  x86_64-linux-gnu
+  x86_64-linux-musl
 
 DEPENDENCIES
   http_parser
@@ -101,4 +180,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.3.7
+   2.5.17
