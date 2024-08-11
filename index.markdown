@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Long Haul
+title: Red Soil Agritech
 ---
 
 <div class="home" id="home">
