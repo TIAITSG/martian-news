@@ -1,0 +1,58 @@
+title: Long Haul
+description: Long Form Jekyll theme built with SASS
+
+url: https://long-haul.netlify.app
+# Only necessary when hosting your site in a sub-directory. Project sites hosted on GitHub Pages are the common use-case of this variable.
+baseurl: # Ex: /project-page
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+# Header Option
+# header: large
+
+# allow for future posts to be published
+future: true
+
+sass:
+    style: compressed
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+
+navigation:
+    - title: Home
+      url: /index.html
+    - title: About
+      url: /about
+    - title: Contact
+      url: /contact
+
+social:
+    github: brianmaierjr
+    twitter: brianmaierjr
+    facebook: brianmaierjr
+    email: brimaidesigns@gmail.com
+    linkedin: brianmaierjr
+    youtube: RickAstleyYT
+    tumblr: i-am-a-fish
+
+google_analytics: "UA-58263416-1"
+
+disqus:
+    shortname: brianmaierjr
+
+collections:
+  authors:
+    output: true
+    permalink: /authors/:slug
+
+exclude:
+  - venv
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - "**/.DS_Store"
+  - venv/lib/python3.12/site-packages/huggingface_hub/templates
