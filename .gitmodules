@@ -1,0 +1,3 @@
+[submodule "long-haul"]
+	path = long-haul
+	url = https://github.com/brianmaierjr/long-haul
