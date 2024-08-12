@@ -44,7 +44,7 @@ def generate_blog_post(prompt):
         {
             "role": "user",
             "content": [
-                {"type": "text", "text": f"Write a blog post about the following topic: {prompt}. Write it from the viewpoint of RedSoil Agritech, a martian company that specializes in Martian Agriculture. Make sure that is in Markdown format. Please return JSON back for your response. The JSON should look like this: {{ json_example }}. For the blog_photo_prompt, please describe a photo that would be relevant to the blog post. Please do not return anything else, just the JSON. Only return the keys blog_title, blog_content, and blog_photo_prompt. Only return syntactically correct JSON."}
+                {"type": "text", "text": f"Write a blog post about the following topic: {prompt}. Write it from the viewpoint of RedSoil Agritech, a martian company that specializes in Martian Agriculture. Make sure that is in Markdown format. Please return JSON back for your response. The JSON should look like this: {{ json_example }}. For the blog_photo_prompt, please give back 2-4 sentences that include descriptive visual words like: Vibrant, dark, beautiful. You can also include descriptions of people, places, or objects. Make sure the blog_photo_prompt is related to the article. For example, if the article or prompt is about green glowing cows, make sure that is in the blog_photo_prompt. Please do not return anything else, just the JSON. Only return the keys blog_title, blog_content, and blog_photo_prompt. Only return syntactically correct JSON."}
             ],
         }
       ],
@@ -52,6 +52,9 @@ def generate_blog_post(prompt):
     
   blog_post = message.content[0].text
   blog_post_json = json.loads(blog_post)
+  print(f"Generate new article with title: {blog_post_json['blog_title']}")
+  print(f"Generate new article with contents: {blog_post_json['blog_content']}")
+  print(f"Generate new article with blog_photo_prompt: {blog_post_json['blog_photo_prompt']}")
   # create an image with fal via blog_photo_prompt
   # return back the title and content separately
   return blog_post_json["blog_title"], blog_post_json["blog_content"], blog_post_json["blog_photo_prompt"]
